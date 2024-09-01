@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopLane E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <h1><a href="index.html">ShopLane</a></h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <div class="search-container">
+              <input type="text" placeholder="Search" class="search-input" />
+              <button class="search-button">
+                <img src="search.png" alt="Search" />
+              </button>
+            </div>
+          </div>
+          <a href="cart.html"><img style="margin-right: 7px;" src="cart.png" alt="Cart" width="32px" height="32px" /></a>
+          <a href="#"><img style="margin-right: 7px; border-radius: 50%;" src="person.jpg" alt="Profile" width="40px" height="40px" /></a>
+        </div>
+      </div>
+    </header>
+  
+    <div id="product-description" class="product-description" data-id="1">
+      <div class="preview-container">
+        <img id="main-preview" class="main-preview" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg" alt="Product Image" />
+        <div class="images">
+          <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg" alt="Product Preview 1" />
+          <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/efc3d5b9-1bb3-4427-af53-7acae7af98951541402833591-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-2.jpg" alt="Product Preview 2" />
+          <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg" alt="Product Preview 3" />
+          <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/66490b64-32de-44b4-a6e4-fe36f1c040051541402833548-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-4.jpg" alt="Product Preview 4" />
+          <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/957be784-7c5d-4e90-ab9f-0928015b22891541402833645-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-5.jpg" alt="Product Preview 5" />
+        </div>
+      </div>
+      <div class="content">
+        <h2 style="font-size: xx-large;">Product Preview</h2>
+        <h1>Men Navy Blue Solid Sweatshirt</h1>
+        <p>United Colors of Benetton</p>
+        <h3>Price: Rs <span>2599</span></h3>
+        <label id="size" for="">Size</label>
+        <br>
+        <select>
+          <option value="">Select Size</option>
+          <option value="">XS</option>
+          <option value="">S</option>
+          <option value="">L</option>
+          <option value="">M</option>
+          <option value="">XL</option>
+          <option value="">XXL</option>
+        </select>
+        <br />
+        <h2>Description</h2>
+        <p id="description">Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem</p>
+        <br>
+        <a  class="btn1" onclick="addToCart('1')">Add to cart</a>
+      </div>
+    </div>
+  
+    <div id="shopping_cart" class="shopping-cart"></div>
+    <div id="label"></div>
+
+    <footer>
+      <ul class="online-store">
+        <li><h3>Online Store</h3></li>
+        <li><a href="#">Men Clothing</a></li>
+        <li><a href="#">Women Clothing</a></li>
+        <li><a href="#">Men Accessories</a></li>
+        <li><a href="#">Women Accessories</a></li>
+      </ul>
+      <ul class="helpful-links">
+        <li><h3>Helpful Links</h3></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="partners">
+        <li><h3>Partners</h3></li>
+        <li><a href="#">Zara</a></li>
+        <li><a href="#">Pantaloons</a></li>
+        <li><a href="#">Levis</a></li>
+        <li><a href="#">Ucb</a></li>
+        <li><a href="#">+ Many More</a></li>
+      </ul>
+      <ul class="address">
+        <li><h3>Address</h3></li>
+        <li>Building 101</li>
+        <li>Central Avenue</li>
+        <li>LA - 902722</li>
+        <li>United States</li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+      document.querySelectorAll('.thumbnail').forEach(img => {
+        img.addEventListener('click', function() {
+          document.getElementById('main-preview').src = this.src;
+        });
+      });
+    </script>
+  </body>
+</html>

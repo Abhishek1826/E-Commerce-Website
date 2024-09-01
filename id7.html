@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLane E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><a href="index.html">ShopLane</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search" class="search-input">
+                        <button class="search-button"><img src="search.png" alt="Search"></button>
+                    </div>
+                </div>
+                <a href="cart.html"><img style="margin-right: 7px;" src="cart.png" alt="Cart" width="32px" height="32px"></a>
+                <a href="#"><img style="margin-right: 7px; border-radius: 50%;" src="person.jpg" alt="Profile" width="40px" height="40px"></a>
+            </div>
+        </div>
+    </header>
+        
+            <div id="product-description" class="product-description" data-id="4">
+                <div class="preview-container">
+                    <img id="main-preview" class="main-preview" width="30%" height="600px" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803247/2019/5/27/624dac60-4c42-4902-bba1-30a51cc7f43c1558948536543-Apple-Unisex-Smart-Watches-1441558948536225-1.jpg" alt="Product Image">
+                    <div class="images">
+        
+                        <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/dc05b5e5-aa82-493e-bf0b-0c309baf21021550920383101-1.jpg" alt="Product Preview 1">
+                        <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/dc05b5e5-aa82-493e-bf0b-0c309baf21021550920383101-1.jpg" alt="Product Preview 2">
+                        <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/1d9bda95-b63e-4312-bbfa-c25b377c96c21550920383126-2.jpg" alt="Product Preview 3">
+                        <img class="thumbnail" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/2261262d-8f2f-4451-9584-9d0cb90e48cf1550920383155-3.jpg" alt="Product Preview 4">
+                        </div>
+                </div>
+                <div class="content">
+                    <h1>Unisex Silver-Toned Series 3 Smart Watch</h1>
+                    <p>Apple</p>
+                    <h3>Price: Rs <span>1999</span></h3>
+                    <br>
+                    <h2>Description</h2>
+                    <p id="description">The new Fastrack Reflex 2.0 Activity Tracker comes with all the features one could ask for! It comes in three colours that you can use to accentuate your athleisure, casual or party attire. Not only does it look uber cool in this cool grey & electric blue accent, further the TPU (Thermoplastic Polyurethane) strap ensures it gives you a snugfit while staying light on your wrist! It is a fitness band with smartwatch features. The band has Steps, Distance and Calorie Tracker, Sleep Tracker, Call & SMS Alerts, OLED Display, 10 Days Power Reserve, Vibration Alarm, Sedentary Reminder and is IPX6 Water Resistant. This band is compatible with both IOS and Android OS. It has a secure 'Pin' based pairing with your phone, for better protection. And, all of this at a price that is hard match anywhere else with quality and promise of the brand Fastrack. Move on and get one for yourself!</p>
+                    <a class="btn1 add-to-cart" onclick="addToCart('7')">Add to cart</a>
+                </div>
+            </div>
+        
+            <div id="shopping_cart" class="shopping-cart"></div>
+            <div id="label"></div>
+        
+            <footer>
+                <ul class="online-store">
+                    <li><h3>Online Store</h3></li>
+                    <li><a href="#">Men Clothing</a></li>
+                    <li><a href="#">Women Clothing</a></li>
+                    <li><a href="#">Men Accessories</a></li>
+                    <li><a href="#">Women Accessories</a></li>
+                </ul>
+                <ul class="helpful-links">
+                    <li><h3>Helpful Links</h3></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="partners">
+                    <li><h3>Partners</h3></li>
+                    <li><a href="#">Zara</a></li>
+                    <li><a href="#">Pantaloons</a></li>
+                    <li><a href="#">Levis</a></li>
+                    <li><a href="#">Ucb</a></li>
+                    <li><a href="#">+ Many More</a></li>
+                </ul>
+                <ul class="address">
+                    <li><h3>Address</h3></li>
+                    <li>Building 101</li>
+                    <li>Central Avenue</li>
+                    <li>LA - 902722</li>
+                    <li>United States</li>
+                </ul>
+            </footer>
+        
+            <script src="script.js"></script>
+            <script src="cart.js"></script>
+            <script>
+                document.querySelectorAll('.thumbnail').forEach(img => {
+                    img.addEventListener('click', function() {
+                        document.getElementById('main-preview').src = this.src;
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
+        <div class="content1">
+            <h1>Unisex Black & Green Reflex 2.0 Smart Band</h1>
+            <p>Fastrack</p>
+            <h3>Price: Rs <span>1999</span></h3>
+            <br>
+            <h2>Description</h2>
+            <p id="para1">The new Fastrack Reflex 2.0 Activity Tracker comes with all the features one could ask for! It comes in three colours that you can use to accentuate your athleisure, casual or party attire. Not only does it look uber cool in this cool grey & electric blue accent, further the TPU (Thermoplastic Polyurethane) strap ensures it gives you a snugfit while staying light on your wrist! It is a fitness band with smartwatch features. The band has Steps, Distance and Calorie Tracker, Sleep Tracker, Call & SMS Alerts, OLED Display, 10 Days Power Reserve, Vibration Alarm, Sedentary Reminder and is IPX6 Water Resistant. This band is compatible with both IOS and Android OS. It has a secure 'Pin' based pairing with your phone, for better protection. And, all of this at a price that is hard match anywhere else with quality and promise of the brand Fastrack. Move on and get one for yourself!</p>
+            <div class="preview1">
+                <h2>Product Preview</h2>
+                <div class="image1">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/dc05b5e5-aa82-493e-bf0b-0c309baf21021550920383101-1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/dc05b5e5-aa82-493e-bf0b-0c309baf21021550920383101-1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/1d9bda95-b63e-4312-bbfa-c25b377c96c21550920383126-2.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/2261262d-8f2f-4451-9584-9d0cb90e48cf1550920383155-3.jpg" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <button class="btn1 add-to-cart" data-product-id="7" >Add to cart</button>
+
+        </div>
+    </div>
+
+    <footer>
+        <ul class="online-store">
+            <li><h3>Online Store</h3></li>
+            <li><a href="#">Men Clothing</a></li>
+            <li><a href="#">Women Clothing</a></li>
+            <li><a href="#">Men Accessories</a></li>
+            <li><a href="#">Women Accessories</a></li>
+        </ul>
+        <ul class="helpful-links">
+            <li><h3>Helpful Links</h3></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="patners">
+            <li><h3>Patners</h3></li>
+            <li><a href="#">Zara</a></li>
+            <li><a href="#">Pantaloons</a></li>
+            <li><a href="#">Levis</a></li>
+            <li><a href="#">Ucb</a></li>
+            <li><a href="#">+ Many More</a></li>
+        </ul>
+        <ul class="address">
+            <li><h3>Address</h3></li>
+            <li>Building 101</li>
+            <li>Central Avenue</li>
+            <li>LA - 902722</li>
+            <li>United States</li>
+        </ul>
+    </footer>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
